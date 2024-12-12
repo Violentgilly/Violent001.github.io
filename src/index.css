@@ -1,0 +1,118 @@
+/* src/index.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f3f4f7, #d1d8e0);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ddd;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.square:hover {
+  transform: scale(1.1);
+  
+}
+
+.square:active {
+  transform: scale(0.95);
+}
+
+.square[style*="background-color: rgb(255, 215, 0)"] {
+  background-color: #FFD700 !important;  /* 黄金色 */
+  box-shadow: 0 0 10px 3px rgba(255, 215, 0, 0.8);  /* 发光效果 */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+.status {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+ol li {
+  margin: 5px 0;
+}
+
+.history-container {
+  max-height: 100px;  /* 设置固定的最大高度 */
+  overflow-y: auto;   /* 超出高度时显示垂直滚动条 */
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .App {
+    font-size: 1rem;
+  }
+  .board-container {
+    padding: 15px;
+  }
+  .square {
+    width: 30px;
+    height: 30px;
+  }
+}
