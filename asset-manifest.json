@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Violent001.github.io/static/css/main.ff7fd9d8.css",
+    "main.js": "/Violent001.github.io/static/js/main.a0efc549.js",
+    "static/js/488.9c92ff38.chunk.js": "/Violent001.github.io/static/js/488.9c92ff38.chunk.js",
+    "index.html": "/Violent001.github.io/index.html",
+    "main.ff7fd9d8.css.map": "/Violent001.github.io/static/css/main.ff7fd9d8.css.map",
+    "main.a0efc549.js.map": "/Violent001.github.io/static/js/main.a0efc549.js.map",
+    "488.9c92ff38.chunk.js.map": "/Violent001.github.io/static/js/488.9c92ff38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff7fd9d8.css",
+    "static/js/main.a0efc549.js"
+  ]
+}
